@@ -1,0 +1,47 @@
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	      xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+	      http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+	      version="2.4">
+
+  <display-name>react-with-spring</display-name>
+
+  <error-page>
+    <error-code>404</error-code>
+    <location>/index.html</location>
+  </error-page>
+  
+  <security-constraint>
+    <web-resource-collection>
+        <url-pattern>/version.json</url-pattern>
+    </web-resource-collection>
+  </security-constraint>
+
+    <security-constraint>
+    <web-resource-collection>
+        <url-pattern>/manifest.json</url-pattern>
+    </web-resource-collection>
+  </security-constraint>
+
+    <!--<security-constraint>
+        <web-resource-collection>
+            <url-pattern>/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>user</role-name>
+        </auth-constraint>
+    </security-constraint>
+    
+    <security-role>
+        <role-name>user</role-name>
+    </security-role>
+    
+    <session-config>  
+        <cookie-config>  
+            <path>/</path>  
+            <name>JSESSIONID</name>
+        </cookie-config>  
+        <tracking-mode>COOKIE</tracking-mode>  
+    </session-config>-->
+
+</web-app>

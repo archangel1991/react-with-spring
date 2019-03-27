@@ -1,0 +1,1 @@
+This is a boilerplace React project with Spring Boot infusion.
