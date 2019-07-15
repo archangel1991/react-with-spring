@@ -37,3 +37,4 @@ ideaconfig.js
 .settings/org.eclipse.core.resources.prefs
 .project
 .classpath
+.vscode/

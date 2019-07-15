@@ -1,0 +1,26 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+        "es6": true,
+        "jest": true,
+        "browser": true
+    },
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true
+        }
+    },
+    "rules": {
+        "no-console": "warn",
+        "semi": ["off", "always"],
+        "quotes": ["off", "double"],
+        "no-mixed-spaces-and-tabs": ["off", "always"],
+        "no-useless-escape": ["off", "always"],
+        "no-unused-vars": ["off", "always"]
+    }
+}
